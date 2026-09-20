@@ -1,0 +1,44 @@
+#!/usr/bin/expect -f
+# Run one /bin/sh command line on the probe VM's serial console as root and print its output.
+#   console-run.exp <root-password> <command> [timeout-seconds]
+# Copes with the console sitting at "login:", at the menu, or at a leftover root shell.
+set pw [lindex $argv 0]
+set cmd [lindex $argv 1]
+set cmdtimeout [expr {[llength $argv] > 2 ? [lindex $argv 2] : 120}]
+set timeout 60
+log_user 0
+spawn nc -U $env(HOME)/.local/share/opnsense-pilot-probe/run/serial.sock
+send "\r"
+expect {
+  "login:"             {
+    send "root\r"; expect "assword:"; send "$pw\r"
+    expect {
+      "Enter an option:" { send "8\r"; expect -re {root@[^\n]*# $} }
+      "Login incorrect"  { puts "LOGIN REJECTED"; exit 4 }
+      timeout            { puts "TIMEOUT after password"; exit 2 }
+    }
+  }
+  "Enter an option:"   { send "8\r"; expect -re {root@[^\n]*# $} }
+  -re {root@[^\n]*# $} {}
+  timeout              { puts "TIMEOUT waiting for a prompt"; exit 2 }
+}
+# root's login shell is csh; run the command under sh. The marker is matched only at
+# line start, because the echoed command line carries it mid-line.
+send "/bin/sh\r"
+expect -re {# $}
+set timeout $cmdtimeout
+send "$cmd; echo __END_OF_CMD__\r"
+log_user 1
+expect {
+  -re {\n__END_OF_CMD__} {}
+  timeout { puts "\nTIMEOUT running command"; exit 3 }
+}
+log_user 0
+set timeout 60
+send "exit\r"
+expect -re {root@[^\n]*# $}
+send "exit\r"
+expect "Enter an option:"
+send "0\r"
+expect "login:"
+puts ""

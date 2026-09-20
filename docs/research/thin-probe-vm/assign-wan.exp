@@ -1,0 +1,24 @@
+#!/usr/bin/expect -f
+# One-off: console menu option 1, assign WAN=vtnet1 and LAN=vtnet0.
+#   assign-wan.exp <root-password>
+set pw [lindex $argv 0]
+set timeout 300
+spawn nc -U $env(HOME)/.local/share/opnsense-pilot-probe/run/serial.sock
+send "\r"
+expect {
+  "login:"           { send "root\r"; expect "assword:"; send "$pw\r"; exp_continue }
+  "Enter an option:" {}
+}
+send "1\r"
+expect {
+  -re {LAGGs now\? \[y/N\]:}  { send "n\r"; exp_continue }
+  -re {VLANs now\? \[y/N\]:}  { send "n\r"; exp_continue }
+  -re {WAN interface name[^\n]*: $} { send "vtnet1\r"; exp_continue }
+  -re {LAN interface name} { expect -re {finished\): $}; send "vtnet0\r"; exp_continue }
+  -re {Optional interface 1 name} { expect -re {finished\): $}; send "\r"; exp_continue }
+  -re {proceed\? \[y/N\]:}    { send "y\r" }
+}
+expect "Enter an option:"
+send "0\r"
+expect "login:"
+puts "\nASSIGNED"
