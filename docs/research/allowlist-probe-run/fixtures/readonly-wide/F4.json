@@ -1,0 +1,229 @@
+{
+ "body": {
+  "current": 1,
+  "rowCount": 3,
+  "rows": [
+   {
+    "%interface": "LAN",
+    "%ipprotocol": "*",
+    "%protocol": "TCP",
+    "alias_meta_destination.network": [
+     {
+      "%value": "LAN address",
+      "description": "",
+      "isAlias": false,
+      "value": "lanip"
+     }
+    ],
+    "alias_meta_destination.port": [
+     {
+      "%value": "80",
+      "description": "",
+      "isAlias": false,
+      "value": "80"
+     }
+    ],
+    "category_colors": [],
+    "descr": "Anti-lockout; prevent redirects for protected ports to this interface address",
+    "destination.network": "lanip",
+    "destination.not": "0",
+    "destination.port": "80",
+    "disabled": "0",
+    "interface": "lan",
+    "ipprotocol": "",
+    "is_automatic": true,
+    "local-port": "",
+    "natreflection": "",
+    "nordr": "1",
+    "prio_group": "100000",
+    "protocol": "tcp",
+    "ref": "system_advanced_firewall.php#noantilockout",
+    "sort_order": "100000.0000001",
+    "source.network": "",
+    "source.not": "0",
+    "source.port": "",
+    "target": "",
+    "uuid": "automatic_pf_1"
+   },
+   {
+    "%interface": "LAN",
+    "%ipprotocol": "*",
+    "%protocol": "TCP",
+    "alias_meta_destination.network": [
+     {
+      "%value": "LAN address",
+      "description": "",
+      "isAlias": false,
+      "value": "lanip"
+     }
+    ],
+    "alias_meta_destination.port": [
+     {
+      "%value": "443",
+      "description": "",
+      "isAlias": false,
+      "value": "443"
+     }
+    ],
+    "category_colors": [],
+    "descr": "Anti-lockout; prevent redirects for protected ports to this interface address",
+    "destination.network": "lanip",
+    "destination.not": "0",
+    "destination.port": "443",
+    "disabled": "0",
+    "interface": "lan",
+    "ipprotocol": "",
+    "is_automatic": true,
+    "local-port": "",
+    "natreflection": "",
+    "nordr": "1",
+    "prio_group": "100000",
+    "protocol": "tcp",
+    "ref": "system_advanced_firewall.php#noantilockout",
+    "sort_order": "100000.0000002",
+    "source.network": "",
+    "source.not": "0",
+    "source.port": "",
+    "target": "",
+    "uuid": "automatic_pf_2"
+   },
+   {
+    "%destination.network": "WAN address",
+    "%interface": "WAN",
+    "%ipprotocol": "IPv4",
+    "%protocol": "TCP",
+    "alias_meta_destination.network": [
+     {
+      "%value": "WAN address",
+      "description": "",
+      "isAlias": false,
+      "value": "wanip"
+     }
+    ],
+    "alias_meta_destination.port": [
+     {
+      "%value": "8443",
+      "description": "",
+      "isAlias": false,
+      "value": "8443"
+     }
+    ],
+    "alias_meta_local-port": [
+     {
+      "%value": "443",
+      "description": "",
+      "isAlias": false,
+      "value": "443"
+     }
+    ],
+    "alias_meta_target": [
+     {
+      "%value": "192.168.1.50",
+      "description": "",
+      "isAlias": false,
+      "value": "192.168.1.50"
+     }
+    ],
+    "associated-rule-id": "",
+    "audit": "eyJjcmVhdGVkIjp7InVzZXJuYW1lIjoicGlsb3QtYWRtaW5AMTkyLjE2OC4xLjIiLCJ0aW1lIjoiMTc4OTkzODQ0Ni44NSIsImRlc2NyaXB0aW9uIjoiXC9h<truncated, 344 chars>",
+    "categories": "",
+    "category": "",
+    "category_colors": [],
+    "created": "",
+    "descr": "pilot seed dnat",
+    "destination.address": "",
+    "destination.network": "wanip",
+    "destination.not": "0",
+    "destination.port": "8443",
+    "disabled": "0",
+    "interface": "wan",
+    "ipprotocol": "inet",
+    "local-port": "443",
+    "log": "0",
+    "natreflection": "",
+    "nordr": "0",
+    "nosync": "0",
+    "pass": "",
+    "poolopts": "",
+    "prio_group": "400000",
+    "protocol": "tcp",
+    "sequence": "200",
+    "sort_order": "400000.0000200",
+    "source.address": "",
+    "source.network": "",
+    "source.not": "0",
+    "source.port": "",
+    "tag": "",
+    "tagged": "",
+    "target": "192.168.1.50",
+    "uuid": "2cb701a9-d98b-4abf-a946-e9ff62ab30d5"
+   }
+  ],
+  "total": 3
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/firewall/d_nat/search_rule"
+ },
+ "shape": [
+  "current",
+  "rowCount",
+  "rows[].%destination.network",
+  "rows[].%interface",
+  "rows[].%ipprotocol",
+  "rows[].%protocol",
+  "rows[].alias_meta_destination.network[].%value",
+  "rows[].alias_meta_destination.network[].description",
+  "rows[].alias_meta_destination.network[].isAlias",
+  "rows[].alias_meta_destination.network[].value",
+  "rows[].alias_meta_destination.port[].%value",
+  "rows[].alias_meta_destination.port[].description",
+  "rows[].alias_meta_destination.port[].isAlias",
+  "rows[].alias_meta_destination.port[].value",
+  "rows[].alias_meta_local-port[].%value",
+  "rows[].alias_meta_local-port[].description",
+  "rows[].alias_meta_local-port[].isAlias",
+  "rows[].alias_meta_local-port[].value",
+  "rows[].alias_meta_target[].%value",
+  "rows[].alias_meta_target[].description",
+  "rows[].alias_meta_target[].isAlias",
+  "rows[].alias_meta_target[].value",
+  "rows[].associated-rule-id",
+  "rows[].audit",
+  "rows[].categories",
+  "rows[].category",
+  "rows[].category_colors[]",
+  "rows[].created",
+  "rows[].descr",
+  "rows[].destination.address",
+  "rows[].destination.network",
+  "rows[].destination.not",
+  "rows[].destination.port",
+  "rows[].disabled",
+  "rows[].interface",
+  "rows[].ipprotocol",
+  "rows[].is_automatic",
+  "rows[].local-port",
+  "rows[].log",
+  "rows[].natreflection",
+  "rows[].nordr",
+  "rows[].nosync",
+  "rows[].pass",
+  "rows[].poolopts",
+  "rows[].prio_group",
+  "rows[].protocol",
+  "rows[].ref",
+  "rows[].sequence",
+  "rows[].sort_order",
+  "rows[].source.address",
+  "rows[].source.network",
+  "rows[].source.not",
+  "rows[].source.port",
+  "rows[].tag",
+  "rows[].tagged",
+  "rows[].target",
+  "rows[].uuid",
+  "total"
+ ],
+ "status": 200
+}

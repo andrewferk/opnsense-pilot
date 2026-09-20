@@ -1,0 +1,13 @@
+{
+ "body": {
+  "errorMessage": "Endpoint not found"
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/dhcpv4/leases/search_lease"
+ },
+ "shape": [
+  "errorMessage"
+ ],
+ "status": 404
+}

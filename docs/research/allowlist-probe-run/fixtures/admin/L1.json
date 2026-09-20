@@ -1,0 +1,71 @@
+{
+ "body": {
+  "current": 1,
+  "filters": "",
+  "origin": "system",
+  "rowCount": 282,
+  "rows": [
+   {
+    "facility": 3,
+    "line": " Sending Solicit on vtnet1",
+    "parser": "SysLogFormatRFC5424",
+    "pid": "38356",
+    "process_name": "dhcp6c",
+    "rnum": 1,
+    "severity": "Notice",
+    "timestamp": "2026-09-20T21:07:46"
+   },
+   {
+    "facility": 1,
+    "line": " event @ 1789938465.49 msg: Sep 20 21:07:45 OPNsense.internal config[45799]: config-event: new_config /conf/backup/config-1789938465.4736.xml",
+    "parser": "SysLogFormatRFC5424",
+    "pid": "88272",
+    "process_name": "configctl",
+    "rnum": 2,
+    "severity": "Notice",
+    "timestamp": "2026-09-20T21:07:46"
+   },
+   {
+    "facility": 1,
+    "line": " event @ 1789938465.49 msg: Sep 20 21:07:45 OPNsense.internal config[45799]: config-event: new_config /conf/backup/config-1789938465.4149.xml",
+    "parser": "SysLogFormatRFC5424",
+    "pid": "88272",
+    "process_name": "configctl",
+    "rnum": 3,
+    "severity": "Notice",
+    "timestamp": "2026-09-20T21:07:46"
+   },
+   "<279 more rows truncated>"
+  ],
+  "total": 282,
+  "total_rows": 282
+ },
+ "request": {
+  "json": {
+   "current": 1,
+   "rowCount": 500,
+   "searchPhrase": "",
+   "severity": "",
+   "validFrom": "0"
+  },
+  "method": "POST",
+  "path": "/api/diagnostics/log/core/system"
+ },
+ "shape": [
+  "current",
+  "filters",
+  "origin",
+  "rowCount",
+  "rows[].facility",
+  "rows[].line",
+  "rows[].parser",
+  "rows[].pid",
+  "rows[].process_name",
+  "rows[].rnum",
+  "rows[].severity",
+  "rows[].timestamp",
+  "total",
+  "total_rows"
+ ],
+ "status": 200
+}

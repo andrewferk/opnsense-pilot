@@ -1,0 +1,61 @@
+{
+ "body": {
+  "current": 1,
+  "rowCount": 1,
+  "rows": [
+   {
+    "%interface": "LAN",
+    "%mode": "CARP",
+    "address": "192.168.1.250/24",
+    "advbase": "1",
+    "advskew": "0",
+    "descr": "pilot seed carp",
+    "gateway": "",
+    "interface": "lan",
+    "mode": "carp",
+    "nobind": "0",
+    "noexpand": "0",
+    "nosync": "0",
+    "password": "<REDACTED>",
+    "peer": "",
+    "peer6": "",
+    "subnet": "192.168.1.250",
+    "subnet_bits": "24",
+    "uuid": "4635d58e-d4bb-4bfc-89b1-1db70f9fa812",
+    "vhid": "5",
+    "vhid_txt": "5 (freq. 1/0)"
+   }
+  ],
+  "total": 1
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/interfaces/vip_settings/search_item"
+ },
+ "shape": [
+  "current",
+  "rowCount",
+  "rows[].%interface",
+  "rows[].%mode",
+  "rows[].address",
+  "rows[].advbase",
+  "rows[].advskew",
+  "rows[].descr",
+  "rows[].gateway",
+  "rows[].interface",
+  "rows[].mode",
+  "rows[].nobind",
+  "rows[].noexpand",
+  "rows[].nosync",
+  "rows[].password",
+  "rows[].peer",
+  "rows[].peer6",
+  "rows[].subnet",
+  "rows[].subnet_bits",
+  "rows[].uuid",
+  "rows[].vhid",
+  "rows[].vhid_txt",
+  "total"
+ ],
+ "status": 200
+}

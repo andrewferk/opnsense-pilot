@@ -1,0 +1,29 @@
+{
+ "body": {
+  "current": 1,
+  "interfaces": [],
+  "rowCount": 0,
+  "rows": [],
+  "stats": {
+   "active": 0,
+   "inactive": 0,
+   "total": 0
+  },
+  "total": 0
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/kea/leases4/search"
+ },
+ "shape": [
+  "current",
+  "interfaces[]",
+  "rowCount",
+  "rows[]",
+  "stats.active",
+  "stats.inactive",
+  "stats.total",
+  "total"
+ ],
+ "status": 200
+}

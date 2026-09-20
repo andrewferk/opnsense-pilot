@@ -1,0 +1,423 @@
+{
+ "body": {
+  "current": 1,
+  "rowCount": 5,
+  "rows": [
+   {
+    "addr4": "192.168.1.1/24",
+    "addr6": "",
+    "capabilities": [
+     "vlan_mtu",
+     "jumbo_mtu",
+     "vlan_hwfilter",
+     "<3 more rows truncated>"
+    ],
+    "config": {
+     "enable": "1",
+     "identifier": "lan",
+     "if": "vtnet0",
+     "ipaddr": "192.168.1.1",
+     "ipaddrv6": "idassoc6",
+     "media": "",
+     "mediaopt": "",
+     "subnet": "24",
+     "subnetv6": "64",
+     "track6-interface": "wan",
+     "track6-prefix-id": "0"
+    },
+    "description": "LAN",
+    "device": "vtnet0",
+    "enabled": true,
+    "flags": [
+     "up",
+     "broadcast",
+     "running",
+     "<3 more rows truncated>"
+    ],
+    "gateways": [
+     "192.168.1.254"
+    ],
+    "identifier": "lan",
+    "ipv4": [
+     {
+      "ipaddr": "192.168.1.1/24"
+     }
+    ],
+    "ipv6": [
+     {
+      "ipaddr": "fe80::5054:ff:fe12:3456/64"
+     }
+    ],
+    "is_physical": true,
+    "link_type": "static",
+    "link_typev6": "idassoc6",
+    "macaddr": "52:54:00:12:34:56",
+    "macaddr_hw": "52:54:00:12:34:56",
+    "media": "10Gbase-T <full-duplex>",
+    "media_raw": "Ethernet autoselect (10Gbase-T <full-duplex>)",
+    "mtu": "1500",
+    "nd6": {
+     "flags": [
+      "performnud",
+      "auto_linklocal"
+     ]
+    },
+    "options": [
+     "vlan_mtu",
+     "jumbo_mtu",
+     "linkstate",
+     "<1 more rows truncated>"
+    ],
+    "routes": [
+     "192.168.1.0/24",
+     "fe80::%vtnet0/64"
+    ],
+    "statistics": {
+     "HW offload capabilities": "0x0",
+     "address length": "6",
+     "bytes received": "317796",
+     "bytes transmitted": "983998",
+     "collisions": "0",
+     "datalen": "152",
+     "device": "vtnet0",
+     "driver": "vtnet0",
+     "flags": "8843",
+     "header length": "18",
+     "index": "1",
+     "input errors": "0",
+     "input queue drops": "0",
+     "line rate": "10000000000 bit/s",
+     "link state": "2",
+     "metric": "0",
+     "mtu": "1500",
+     "multicasts received": "1",
+     "multicasts transmitted": "0",
+     "output errors": "0",
+     "packets for unknown protocol": "0",
+     "packets received": "1181",
+     "packets transmitted": "1342",
+     "promiscuous listeners": "0",
+     "send queue drops": "0",
+     "send queue length": "0",
+     "send queue max length": "50",
+     "type": "Ethernet",
+     "uptime at attach or stat reset": "1",
+     "vhid": "0"
+    },
+    "status": "up",
+    "supported_media": [
+     "autoselect"
+    ],
+    "vlan_tag": null
+   },
+   {
+    "addr4": "10.0.2.15/24",
+    "addr6": "fec0::5054:ff:fe12:3457/64",
+    "capabilities": [
+     "vlan_mtu",
+     "jumbo_mtu",
+     "vlan_hwfilter",
+     "<3 more rows truncated>"
+    ],
+    "config": {
+     "blockbogons": "1",
+     "blockpriv": "1",
+     "enable": "1",
+     "identifier": "wan",
+     "if": "vtnet1",
+     "ipaddr": "dhcp",
+     "ipaddrv6": "dhcp6"
+    },
+    "description": "WAN",
+    "device": "vtnet1",
+    "enabled": true,
+    "flags": [
+     "up",
+     "broadcast",
+     "running",
+     "<4 more rows truncated>"
+    ],
+    "gateways": [
+     "fe80::2"
+    ],
+    "identifier": "wan",
+    "ifctl.router": [
+     "fe80::2"
+    ],
+    "ipv4": [
+     {
+      "ipaddr": "10.0.2.15/24"
+     }
+    ],
+    "ipv6": [
+     {
+      "ipaddr": "fec0::5054:ff:fe12:3457/64"
+     },
+     {
+      "ipaddr": "fe80::5054:ff:fe12:3457/64"
+     }
+    ],
+    "is_physical": true,
+    "link_type": "dhcp",
+    "link_typev6": "dhcp6",
+    "macaddr": "52:54:00:12:34:57",
+    "macaddr_hw": "52:54:00:12:34:57",
+    "media": "10Gbase-T <full-duplex>",
+    "media_raw": "Ethernet autoselect (10Gbase-T <full-duplex>)",
+    "mtu": "1500",
+    "nd6": {
+     "flags": [
+      "performnud",
+      "accept_rtadv",
+      "auto_linklocal"
+     ]
+    },
+    "options": [
+     "vlan_mtu",
+     "jumbo_mtu",
+     "linkstate",
+     "<1 more rows truncated>"
+    ],
+    "routes": [
+     "10.0.2.0/24",
+     "default",
+     "fe80::%vtnet1/64",
+     "<1 more rows truncated>"
+    ],
+    "statistics": {
+     "HW offload capabilities": "0x0",
+     "address length": "6",
+     "bytes received": "786",
+     "bytes transmitted": "4078",
+     "collisions": "0",
+     "datalen": "152",
+     "device": "vtnet1",
+     "driver": "vtnet1",
+     "flags": "8943",
+     "header length": "18",
+     "index": "2",
+     "input errors": "0",
+     "input queue drops": "0",
+     "line rate": "10000000000 bit/s",
+     "link state": "2",
+     "metric": "0",
+     "mtu": "1500",
+     "multicasts received": "2",
+     "multicasts transmitted": "0",
+     "output errors": "0",
+     "packets for unknown protocol": "0",
+     "packets received": "3",
+     "packets transmitted": "41",
+     "promiscuous listeners": "1",
+     "send queue drops": "0",
+     "send queue length": "0",
+     "send queue max length": "50",
+     "type": "Ethernet",
+     "uptime at attach or stat reset": "1",
+     "vhid": "0"
+    },
+    "status": "up",
+    "supported_media": [
+     "autoselect"
+    ],
+    "vlan_tag": null
+   },
+   {
+    "addr4": "127.0.0.1/8",
+    "addr6": "::1/128",
+    "capabilities": [
+     "rxcsum",
+     "txcsum",
+     "linkstate",
+     "<2 more rows truncated>"
+    ],
+    "config": {
+     "descr": "Loopback",
+     "enable": "1",
+     "identifier": "lo0",
+     "if": "lo0",
+     "internal_dynamic": "1",
+     "ipaddr": "127.0.0.1",
+     "ipaddrv6": "::1",
+     "subnet": "8",
+     "subnetv6": "128",
+     "type": "none",
+     "virtual": "1"
+    },
+    "description": "Loopback",
+    "device": "lo0",
+    "enabled": true,
+    "flags": [
+     "up",
+     "loopback",
+     "running",
+     "<2 more rows truncated>"
+    ],
+    "gateways": [],
+    "groups": [
+     "lo"
+    ],
+    "identifier": "lo0",
+    "ipv4": [
+     {
+      "ipaddr": "127.0.0.1/8"
+     }
+    ],
+    "ipv6": [
+     {
+      "ipaddr": "::1/128"
+     },
+     {
+      "ipaddr": "fe80::1/64"
+     }
+    ],
+    "is_physical": false,
+    "link_type": "static",
+    "link_typev6": "static",
+    "macaddr": "00:00:00:00:00:00",
+    "mtu": "16384",
+    "nd6": {
+     "flags": [
+      "performnud",
+      "auto_linklocal"
+     ]
+    },
+    "options": [
+     "rxcsum",
+     "txcsum",
+     "linkstate",
+     "<2 more rows truncated>"
+    ],
+    "routes": [
+     "10.0.2.15",
+     "127.0.0.1",
+     "192.168.1.1",
+     "<6 more rows truncated>"
+    ],
+    "statistics": {
+     "HW offload capabilities": "0xe0f",
+     "address length": "0",
+     "bytes received": "44836",
+     "bytes transmitted": "44836",
+     "collisions": "0",
+     "datalen": "152",
+     "device": "lo0",
+     "driver": "lo0",
+     "flags": "8049",
+     "header length": "0",
+     "index": "3",
+     "input errors": "0",
+     "input queue drops": "0",
+     "line rate": "0 bit/s",
+     "link state": "2",
+     "metric": "0",
+     "mtu": "16384",
+     "multicasts received": "0",
+     "multicasts transmitted": "0",
+     "output errors": "0",
+     "packets for unknown protocol": "0",
+     "packets received": "353",
+     "packets transmitted": "353",
+     "promiscuous listeners": "0",
+     "send queue drops": "0",
+     "send queue length": "0",
+     "send queue max length": "50",
+     "type": "Loopback",
+     "uptime at attach or stat reset": "1",
+     "vhid": "0"
+    },
+    "status": "up",
+    "supported_media": [],
+    "vlan_tag": null
+   },
+   "<2 more rows truncated>"
+  ],
+  "total": 5
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/interfaces/overview/interfaces_info/1"
+ },
+ "shape": [
+  "current",
+  "rowCount",
+  "rows[].addr4",
+  "rows[].addr6",
+  "rows[].capabilities[]",
+  "rows[].config.blockbogons",
+  "rows[].config.blockpriv",
+  "rows[].config.descr",
+  "rows[].config.enable",
+  "rows[].config.identifier",
+  "rows[].config.if",
+  "rows[].config.internal_dynamic",
+  "rows[].config.ipaddr",
+  "rows[].config.ipaddrv6",
+  "rows[].config.media",
+  "rows[].config.mediaopt",
+  "rows[].config.subnet",
+  "rows[].config.subnetv6",
+  "rows[].config.track6-interface",
+  "rows[].config.track6-prefix-id",
+  "rows[].config.type",
+  "rows[].config.virtual",
+  "rows[].description",
+  "rows[].device",
+  "rows[].enabled",
+  "rows[].flags[]",
+  "rows[].gateways[]",
+  "rows[].groups[]",
+  "rows[].identifier",
+  "rows[].ifctl.router[]",
+  "rows[].ipv4[]",
+  "rows[].ipv4[].ipaddr",
+  "rows[].ipv6[]",
+  "rows[].ipv6[].ipaddr",
+  "rows[].is_physical",
+  "rows[].link_type",
+  "rows[].link_typev6",
+  "rows[].macaddr",
+  "rows[].macaddr_hw",
+  "rows[].media",
+  "rows[].media_raw",
+  "rows[].mtu",
+  "rows[].nd6.flags[]",
+  "rows[].options[]",
+  "rows[].routes[]",
+  "rows[].statistics.HW offload capabilities",
+  "rows[].statistics.address length",
+  "rows[].statistics.bytes received",
+  "rows[].statistics.bytes transmitted",
+  "rows[].statistics.collisions",
+  "rows[].statistics.datalen",
+  "rows[].statistics.device",
+  "rows[].statistics.driver",
+  "rows[].statistics.flags",
+  "rows[].statistics.header length",
+  "rows[].statistics.index",
+  "rows[].statistics.input errors",
+  "rows[].statistics.input queue drops",
+  "rows[].statistics.line rate",
+  "rows[].statistics.link state",
+  "rows[].statistics.metric",
+  "rows[].statistics.mtu",
+  "rows[].statistics.multicasts received",
+  "rows[].statistics.multicasts transmitted",
+  "rows[].statistics.output errors",
+  "rows[].statistics.packets for unknown protocol",
+  "rows[].statistics.packets received",
+  "rows[].statistics.packets transmitted",
+  "rows[].statistics.promiscuous listeners",
+  "rows[].statistics.send queue drops",
+  "rows[].statistics.send queue length",
+  "rows[].statistics.send queue max length",
+  "rows[].statistics.type",
+  "rows[].statistics.uptime at attach or stat reset",
+  "rows[].statistics.vhid",
+  "rows[].status",
+  "rows[].supported_media[]",
+  "rows[].vlan_tag",
+  "total"
+ ],
+ "status": 200
+}

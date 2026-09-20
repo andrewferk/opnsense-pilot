@@ -1,0 +1,15 @@
+{
+ "body": {
+  "message": "Forbidden",
+  "status": 403
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/routing/group_settings/search"
+ },
+ "shape": [
+  "message",
+  "status"
+ ],
+ "status": 403
+}

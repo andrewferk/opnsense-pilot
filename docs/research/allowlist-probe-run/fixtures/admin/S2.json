@@ -1,0 +1,21 @@
+{
+ "body": {
+  "boottime": "Sun Sep 20 21:04:57 UTC 2026",
+  "config": "Sun Sep 20 21:07:45 UTC 2026",
+  "datetime": "Sun Sep 20 21:08:36 UTC 2026",
+  "loadavg": "0.80, 0.41, 0.17",
+  "uptime": "00:03:39"
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/diagnostics/system/system_time"
+ },
+ "shape": [
+  "boottime",
+  "config",
+  "datetime",
+  "loadavg",
+  "uptime"
+ ],
+ "status": 200
+}

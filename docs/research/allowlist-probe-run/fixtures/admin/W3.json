@@ -1,0 +1,47 @@
+{
+ "body": {
+  "current": 1,
+  "rowCount": 1,
+  "rows": [
+   {
+    "%servers": "pilot-wg",
+    "enabled": "1",
+    "endpoint": "",
+    "keepalive": "25",
+    "name": "pilot-peer",
+    "privkey": "",
+    "psk": "<REDACTED>",
+    "pubkey": "dK6+KWr95srKOvToI43cMPge19hjassJ/hc7fSIWH30=",
+    "serveraddress": "",
+    "serverport": "",
+    "servers": "625567b3-e146-4dbc-b574-34ca222b113f",
+    "tunneladdress": "10.99.0.2/32",
+    "uuid": "9641437e-2100-4530-bcdb-350b646580de"
+   }
+  ],
+  "total": 1
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/wireguard/client/search_client"
+ },
+ "shape": [
+  "current",
+  "rowCount",
+  "rows[].%servers",
+  "rows[].enabled",
+  "rows[].endpoint",
+  "rows[].keepalive",
+  "rows[].name",
+  "rows[].privkey",
+  "rows[].psk",
+  "rows[].pubkey",
+  "rows[].serveraddress",
+  "rows[].serverport",
+  "rows[].servers",
+  "rows[].tunneladdress",
+  "rows[].uuid",
+  "total"
+ ],
+ "status": 200
+}

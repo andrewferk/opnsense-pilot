@@ -1,0 +1,51 @@
+{
+ "body": {
+  "current": 1,
+  "rowCount": 1,
+  "rows": [
+   {
+    "%interface": "WAN",
+    "audit": "eyJjcmVhdGVkIjp7InVzZXJuYW1lIjoicGlsb3QtYWRtaW5AMTkyLjE2OC4xLjIiLCJ0aW1lIjoiMTc4OTkzODQ0Ny4yMyIsImRlc2NyaXB0aW9uIjoiXC9h<truncated, 344 chars>",
+    "categories": "",
+    "category_colors": [],
+    "description": "pilot seed npt",
+    "destination_net": "2001:db8:1::/64",
+    "enabled": "1",
+    "interface": "wan",
+    "log": "0",
+    "prio_group": "400000",
+    "sequence": "100",
+    "sort_order": "400000.0000100",
+    "source_net": "fd00:1::/64",
+    "trackif": "",
+    "uuid": "0b763255-2e3d-45ce-a600-d00f376acba2"
+   }
+  ],
+  "total": 1
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/firewall/npt/search_rule"
+ },
+ "shape": [
+  "current",
+  "rowCount",
+  "rows[].%interface",
+  "rows[].audit",
+  "rows[].categories",
+  "rows[].category_colors[]",
+  "rows[].description",
+  "rows[].destination_net",
+  "rows[].enabled",
+  "rows[].interface",
+  "rows[].log",
+  "rows[].prio_group",
+  "rows[].sequence",
+  "rows[].sort_order",
+  "rows[].source_net",
+  "rows[].trackif",
+  "rows[].uuid",
+  "total"
+ ],
+ "status": 200
+}

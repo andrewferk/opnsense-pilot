@@ -1,0 +1,77 @@
+{
+ "body": {
+  "current": 1,
+  "rowCount": 1,
+  "rows": [
+   {
+    "%item": "WAN_DHCP6 - fe80::2",
+    "%trigger": "Member Down",
+    "descr": "pilot seed group",
+    "gateways": {
+     "1": [
+      {
+       "address": "fe80::2",
+       "delay": "~",
+       "label": "success",
+       "loss": "~",
+       "monitor": "~",
+       "name": "WAN_DHCP6",
+       "status": "none",
+       "status_translated": "Online",
+       "stddev": "~"
+      }
+     ],
+     "2": [],
+     "3": [],
+     "4": [],
+     "5": []
+    },
+    "item": "WAN_DHCP6",
+    "item2": "",
+    "item3": "",
+    "item4": "",
+    "item5": "",
+    "name": "PILOT_GROUP",
+    "poolopts": "",
+    "trigger": "down",
+    "uuid": "f64b1bc0-dfc5-4f02-9c0f-1b498a3272db"
+   }
+  ],
+  "total": 1
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/routing/group_settings/search"
+ },
+ "shape": [
+  "current",
+  "rowCount",
+  "rows[].%item",
+  "rows[].%trigger",
+  "rows[].descr",
+  "rows[].gateways.1[].address",
+  "rows[].gateways.1[].delay",
+  "rows[].gateways.1[].label",
+  "rows[].gateways.1[].loss",
+  "rows[].gateways.1[].monitor",
+  "rows[].gateways.1[].name",
+  "rows[].gateways.1[].status",
+  "rows[].gateways.1[].status_translated",
+  "rows[].gateways.1[].stddev",
+  "rows[].gateways.2[]",
+  "rows[].gateways.3[]",
+  "rows[].gateways.4[]",
+  "rows[].gateways.5[]",
+  "rows[].item",
+  "rows[].item2",
+  "rows[].item3",
+  "rows[].item4",
+  "rows[].item5",
+  "rows[].name",
+  "rows[].poolopts",
+  "rows[].trigger",
+  "rows[].uuid",
+  "total"
+ ],
+ "status": 200
+}

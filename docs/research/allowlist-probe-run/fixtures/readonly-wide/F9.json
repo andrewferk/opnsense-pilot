@@ -1,0 +1,16 @@
+{
+ "body": [
+  "bogons",
+  "bogonsv6",
+  "sshlockout",
+  "<4 more rows truncated>"
+ ],
+ "request": {
+  "method": "GET",
+  "path": "/api/firewall/alias_util/aliases"
+ },
+ "shape": [
+  "[]"
+ ],
+ "status": 200
+}

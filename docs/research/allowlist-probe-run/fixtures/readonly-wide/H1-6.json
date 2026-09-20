@@ -1,0 +1,91 @@
+{
+ "body": {
+  "dhcpv6": {
+   "general": {
+    "decline_probation_period": "",
+    "enabled": "0",
+    "fwrules": "1",
+    "interfaces": {
+     "lan": {
+      "selected": 0,
+      "value": "LAN"
+     },
+     "wan": {
+      "selected": 0,
+      "value": "WAN"
+     }
+    },
+    "mac_sources": {
+     "client-link-addr-option": {
+      "selected": 0,
+      "value": "client-link-addr-option"
+     },
+     "docsis-cmts": {
+      "selected": 0,
+      "value": "docsis-cmts"
+     },
+     "docsis-modem": {
+      "selected": 0,
+      "value": "docsis-modem"
+     },
+     "duid": {
+      "selected": 0,
+      "value": "duid"
+     },
+     "ipv6-link-local": {
+      "selected": 1,
+      "value": "ipv6-link-local"
+     },
+     "remote-id": {
+      "selected": 0,
+      "value": "remote-id"
+     }
+    },
+    "manual_config": "0",
+    "service_sockets_max_retries": "",
+    "service_sockets_retry_wait_time": "",
+    "valid_lifetime": "4000"
+   },
+   "ha": {
+    "%this_server_name": "OPNsense",
+    "enabled": "0",
+    "max_unacked_clients": "2",
+    "this_server_name": ""
+   },
+   "lexpire": {
+    "flush_reclaimed_timer_wait_time": "",
+    "hold_reclaimed_time": "",
+    "max_reclaim_leases": "",
+    "max_reclaim_time": "",
+    "reclaim_timer_wait_time": "",
+    "unwarned_reclaim_cycles": ""
+   }
+  }
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/kea/dhcpv6/get"
+ },
+ "shape": [
+  "dhcpv6.general.decline_probation_period",
+  "dhcpv6.general.enabled",
+  "dhcpv6.general.fwrules",
+  "dhcpv6.general.interfaces{opt}",
+  "dhcpv6.general.mac_sources{opt}",
+  "dhcpv6.general.manual_config",
+  "dhcpv6.general.service_sockets_max_retries",
+  "dhcpv6.general.service_sockets_retry_wait_time",
+  "dhcpv6.general.valid_lifetime",
+  "dhcpv6.ha.%this_server_name",
+  "dhcpv6.ha.enabled",
+  "dhcpv6.ha.max_unacked_clients",
+  "dhcpv6.ha.this_server_name",
+  "dhcpv6.lexpire.flush_reclaimed_timer_wait_time",
+  "dhcpv6.lexpire.hold_reclaimed_time",
+  "dhcpv6.lexpire.max_reclaim_leases",
+  "dhcpv6.lexpire.max_reclaim_time",
+  "dhcpv6.lexpire.reclaim_timer_wait_time",
+  "dhcpv6.lexpire.unwarned_reclaim_cycles"
+ ],
+ "status": 200
+}

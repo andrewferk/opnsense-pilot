@@ -1,0 +1,11 @@
+#!/usr/bin/expect -f
+# Leave a stray /bin/sh on the probe VM's serial console so console-run.exp recognises the prompt again.
+set timeout 20
+spawn nc -U $env(HOME)/.local/share/opnsense-pilot-probe/run/serial.sock
+send "\r"
+expect -re {# $}
+send "exit\r"
+expect {
+  -re {root@[^\n]*# $} { puts "\nback at root csh" }
+  timeout { puts "\nstill stuck" ; exit 1 }
+}

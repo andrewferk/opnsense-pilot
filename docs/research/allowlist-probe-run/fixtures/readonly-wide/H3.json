@@ -1,0 +1,61 @@
+{
+ "body": {
+  "current": 1,
+  "rowCount": 1,
+  "rows": [
+   {
+    "%subnet": "192.168.1.0/24",
+    "client_id": "",
+    "description": "pilot seed reservation",
+    "hostname": "seedhost",
+    "hw_address": "02:00:00:00:00:01",
+    "ip_address": "192.168.1.150",
+    "next_server": "",
+    "option": "",
+    "option_data.boot_file_name": "",
+    "option_data.classless_static_route": "",
+    "option_data.domain_name": "",
+    "option_data.domain_name_servers": "",
+    "option_data.domain_search": "",
+    "option_data.ntp_servers": "",
+    "option_data.routers": "",
+    "option_data.static_routes": "",
+    "option_data.tftp_server_name": "",
+    "option_data.time_servers": "",
+    "subnet": "e4ad8bce-f618-4f9d-97d9-722491b5c73c",
+    "uuid": "5c345836-4eda-4630-97cc-7e384618e77d"
+   }
+  ],
+  "total": 1
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/kea/dhcpv4/search_reservation"
+ },
+ "shape": [
+  "current",
+  "rowCount",
+  "rows[].%subnet",
+  "rows[].client_id",
+  "rows[].description",
+  "rows[].hostname",
+  "rows[].hw_address",
+  "rows[].ip_address",
+  "rows[].next_server",
+  "rows[].option",
+  "rows[].option_data.boot_file_name",
+  "rows[].option_data.classless_static_route",
+  "rows[].option_data.domain_name",
+  "rows[].option_data.domain_name_servers",
+  "rows[].option_data.domain_search",
+  "rows[].option_data.ntp_servers",
+  "rows[].option_data.routers",
+  "rows[].option_data.static_routes",
+  "rows[].option_data.tftp_server_name",
+  "rows[].option_data.time_servers",
+  "rows[].subnet",
+  "rows[].uuid",
+  "total"
+ ],
+ "status": 200
+}

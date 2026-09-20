@@ -1,0 +1,43 @@
+{
+ "body": {
+  "items": [
+   {
+    "address": "fe80::2",
+    "delay": "~",
+    "loss": "~",
+    "monitor": "~",
+    "name": "WAN_DHCP6",
+    "status": "none",
+    "status_translated": "Online",
+    "stddev": "~"
+   },
+   {
+    "address": "192.168.1.254",
+    "delay": "~",
+    "loss": "~",
+    "monitor": "~",
+    "name": "PILOT_GW",
+    "status": "none",
+    "status_translated": "Online",
+    "stddev": "~"
+   }
+  ],
+  "status": "ok"
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/routes/gateway/status"
+ },
+ "shape": [
+  "items[].address",
+  "items[].delay",
+  "items[].loss",
+  "items[].monitor",
+  "items[].name",
+  "items[].status",
+  "items[].status_translated",
+  "items[].stddev",
+  "status"
+ ],
+ "status": 200
+}

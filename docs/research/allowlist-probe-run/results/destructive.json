@@ -1,0 +1,68 @@
+[
+ {
+  "step": "guarded model write (VLAN add)",
+  "request": "POST /api/interfaces/vlan_settings/add_item",
+  "status": 500,
+  "body": "{\"errorMessage\":\"User pilot-readonly denied for write access (user-config-readonly set)\",\"errorTitle\":\"General access\",\"errorLevel\":\"error\"}",
+  "changed": {}
+ },
+ {
+  "step": "guarded custom write (alias_util add, fixed in 26.7.1)",
+  "request": "POST /api/firewall/alias_util/add/pilot_hosts",
+  "status": 500,
+  "body": "{\"errorMessage\":\"User pilot-readonly denied for write access (user-config-readonly set)\",\"errorTitle\":\"General access\",\"errorLevel\":\"error\"}",
+  "changed": {}
+ },
+ {
+  "step": "filter apply (configd reload, unguarded by design)",
+  "request": "POST /api/firewall/filter/apply",
+  "status": 200,
+  "body": "{\"status\":\"OK\\n\\n\"}",
+  "changed": {}
+ },
+ {
+  "step": "service restart cron (unguarded by design)",
+  "request": "POST /api/core/service/restart/cron",
+  "status": 200,
+  "body": "{\"result\":\"ok\"}",
+  "changed": {}
+ },
+ {
+  "step": "log clear (unguarded by design)",
+  "request": "POST /api/diagnostics/log/core/system/clear",
+  "status": 200,
+  "body": "{\"status\":\"ok\"}",
+  "changed": {}
+ },
+ {
+  "step": "assignment reconfigure (source: saves config with no guard)",
+  "request": "POST /api/interfaces/assignment/reconfigure",
+  "status": 200,
+  "body": "{\"status\":\"ok\"}",
+  "changed": {
+   "backups": [
+    34,
+    35
+   ],
+   "newest_time": [
+    "2026-09-20T21:09:49+00:00",
+    "2026-09-20T21:21:10+00:00"
+   ],
+   "newest_by": [
+    "pilot-admin@192.168.1.2",
+    "pilot-readonly@192.168.1.2"
+   ],
+   "newest_descr": [
+    "user \"\" changed",
+    "/api/interfaces/assignment/reconfigure made changes"
+   ]
+  }
+ },
+ {
+  "step": "admin: savepoint API still present? (claimed removed at 26.7)",
+  "request": "POST /api/firewall/filter/savepoint",
+  "status": 404,
+  "body": "{\"errorMessage\":\"Endpoint not found\"}",
+  "changed": {}
+ }
+]

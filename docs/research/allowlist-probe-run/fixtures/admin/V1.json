@@ -1,0 +1,46 @@
+{
+ "body": {
+  "current": 1,
+  "rowCount": 12,
+  "rows": [
+   {
+    "description": "Configd",
+    "id": "configd",
+    "locked": 1,
+    "name": "configd",
+    "running": 1
+   },
+   {
+    "description": "Cron",
+    "id": "cron",
+    "locked": 0,
+    "name": "cron",
+    "running": 1
+   },
+   {
+    "description": "Dnsmasq DNS/DHCP",
+    "id": "dnsmasq",
+    "locked": 0,
+    "name": "dnsmasq",
+    "running": 1
+   },
+   "<9 more rows truncated>"
+  ],
+  "total": 12
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/core/service/search"
+ },
+ "shape": [
+  "current",
+  "rowCount",
+  "rows[].description",
+  "rows[].id",
+  "rows[].locked",
+  "rows[].name",
+  "rows[].running",
+  "total"
+ ],
+ "status": 200
+}

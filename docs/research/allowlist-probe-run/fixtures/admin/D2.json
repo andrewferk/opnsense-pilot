@@ -1,0 +1,433 @@
+{
+ "body": {
+  "dnsmasq": {
+   "add_mac": {
+    "": {
+     "selected": 1,
+     "value": "None"
+    },
+    "base64": {
+     "selected": 0,
+     "value": "base64"
+    },
+    "standard": {
+     "selected": 0,
+     "value": "standard"
+    },
+    "text": {
+     "selected": 0,
+     "value": "text"
+    }
+   },
+   "add_subnet": "0",
+   "cache_size": "",
+   "dhcp": {
+    "%domain": "internal",
+    "authoritative": "0",
+    "default_fw_rules": "1",
+    "domain": "",
+    "enable_ra": "1",
+    "fqdn": "1",
+    "host_ping": "1",
+    "lease_max": "",
+    "local": "1",
+    "log_dhcp": "0",
+    "log_quiet": "0",
+    "no_interface": {
+     "lan": {
+      "selected": 0,
+      "value": "LAN"
+     },
+     "wan": {
+      "selected": 0,
+      "value": "WAN"
+     }
+    },
+    "nosync": "0",
+    "reply_delay": ""
+   },
+   "dhcp_boot": [],
+   "dhcp_options": [],
+   "dhcp_ranges": {
+    "1c30eccc-fe5a-4ca0-9aa6-1218dd935120": {
+     "constructor": {
+      "": {
+       "selected": 1,
+       "value": "None"
+      },
+      "lan": {
+       "selected": 0,
+       "value": "LAN"
+      },
+      "wan": {
+       "selected": 0,
+       "value": "WAN"
+      }
+     },
+     "description": "",
+     "domain": "",
+     "domain_type": {
+      "interface": {
+       "selected": 0,
+       "value": "Interface"
+      },
+      "range": {
+       "selected": 1,
+       "value": "Range"
+      }
+     },
+     "end_addr": "192.168.1.199",
+     "interface": {
+      "": {
+       "selected": 0,
+       "value": "Any"
+      },
+      "lan": {
+       "selected": 1,
+       "value": "LAN"
+      },
+      "wan": {
+       "selected": 0,
+       "value": "WAN"
+      }
+     },
+     "lease_time": "",
+     "mode": {
+      "static": {
+       "selected": 0,
+       "value": "static"
+      }
+     },
+     "nosync": "0",
+     "prefix_len": "",
+     "ra_interval": "",
+     "ra_mode": {
+      "off-link": {
+       "selected": 0,
+       "value": "off-link"
+      },
+      "ra-advrouter": {
+       "selected": 0,
+       "value": "ra-advrouter"
+      },
+      "ra-names": {
+       "selected": 0,
+       "value": "ra-names"
+      },
+      "ra-only": {
+       "selected": 0,
+       "value": "ra-only"
+      },
+      "ra-stateless": {
+       "selected": 0,
+       "value": "ra-stateless"
+      },
+      "slaac": {
+       "selected": 0,
+       "value": "slaac"
+      }
+     },
+     "ra_mtu": "",
+     "ra_priority": {
+      "": {
+       "selected": 1,
+       "value": "Normal"
+      },
+      "high": {
+       "selected": 0,
+       "value": "High"
+      },
+      "low": {
+       "selected": 0,
+       "value": "Low"
+      }
+     },
+     "ra_router_lifetime": "",
+     "set_tag": {
+      "": {
+       "selected": 1,
+       "value": "None"
+      }
+     },
+     "start_addr": "192.168.1.100",
+     "subnet_mask": ""
+    },
+    "572232ad-30eb-4f66-b725-d6363a8f7a54": {
+     "constructor": {
+      "": {
+       "selected": 0,
+       "value": "None"
+      },
+      "lan": {
+       "selected": 1,
+       "value": "LAN"
+      },
+      "wan": {
+       "selected": 0,
+       "value": "WAN"
+      }
+     },
+     "description": "",
+     "domain": "",
+     "domain_type": {
+      "interface": {
+       "selected": 0,
+       "value": "Interface"
+      },
+      "range": {
+       "selected": 1,
+       "value": "Range"
+      }
+     },
+     "end_addr": "::2000",
+     "interface": {
+      "": {
+       "selected": 0,
+       "value": "Any"
+      },
+      "lan": {
+       "selected": 1,
+       "value": "LAN"
+      },
+      "wan": {
+       "selected": 0,
+       "value": "WAN"
+      }
+     },
+     "lease_time": "",
+     "mode": {
+      "static": {
+       "selected": 0,
+       "value": "static"
+      }
+     },
+     "nosync": "0",
+     "prefix_len": "",
+     "ra_interval": "",
+     "ra_mode": {
+      "off-link": {
+       "selected": 0,
+       "value": "off-link"
+      },
+      "ra-advrouter": {
+       "selected": 0,
+       "value": "ra-advrouter"
+      },
+      "ra-names": {
+       "selected": 0,
+       "value": "ra-names"
+      },
+      "ra-only": {
+       "selected": 0,
+       "value": "ra-only"
+      },
+      "ra-stateless": {
+       "selected": 0,
+       "value": "ra-stateless"
+      },
+      "slaac": {
+       "selected": 1,
+       "value": "slaac"
+      }
+     },
+     "ra_mtu": "",
+     "ra_priority": {
+      "": {
+       "selected": 1,
+       "value": "Normal"
+      },
+      "high": {
+       "selected": 0,
+       "value": "High"
+      },
+      "low": {
+       "selected": 0,
+       "value": "Low"
+      }
+     },
+     "ra_router_lifetime": "",
+     "set_tag": {
+      "": {
+       "selected": 1,
+       "value": "None"
+      }
+     },
+     "start_addr": "::1000",
+     "subnet_mask": ""
+    }
+   },
+   "dhcp_tags": [],
+   "dhcpfirst": "0",
+   "dns_forward_max": "",
+   "dns_port": "53053",
+   "dnssec": "0",
+   "domain_needed": "0",
+   "domainoverrides": [],
+   "enable": "1",
+   "expand_hosts": "0",
+   "hosts": {
+    "cb978311-3058-4b74-87c7-05a291b729a8": {
+     "aliases": {
+      "": {
+       "selected": 1,
+       "value": ""
+      }
+     },
+     "client_id": "",
+     "cnames": {
+      "": {
+       "selected": 1,
+       "value": ""
+      }
+     },
+     "comments": "",
+     "descr": "pilot seed",
+     "domain": "pilot.example",
+     "host": "seedmasq",
+     "hwaddr": {
+      "": {
+       "selected": 1,
+       "value": ""
+      }
+     },
+     "ignore": "0",
+     "ip": {
+      "192.0.2.54": {
+       "selected": 1,
+       "value": "192.0.2.54"
+      }
+     },
+     "lease_time": "",
+     "local": "0",
+     "set_tag": {
+      "": {
+       "selected": 1,
+       "value": "None"
+      }
+     }
+    }
+   },
+   "interface": {
+    "lan": {
+     "selected": 1,
+     "value": "LAN"
+    },
+    "wan": {
+     "selected": 0,
+     "value": "WAN"
+    }
+   },
+   "local_ttl": "",
+   "log_queries": "0",
+   "no_hosts": "0",
+   "no_ident": "1",
+   "no_private_reverse": "0",
+   "no_resolv": "0",
+   "port": "53053",
+   "regdhcp": "0",
+   "regdhcpdomain": "",
+   "regdhcpstatic": "0",
+   "strict_order": "0",
+   "strictbind": "0",
+   "strip_subnet": "0"
+  }
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/dnsmasq/settings/get"
+ },
+ "shape": [
+  "dnsmasq.add_mac{opt}",
+  "dnsmasq.add_subnet",
+  "dnsmasq.cache_size",
+  "dnsmasq.dhcp.%domain",
+  "dnsmasq.dhcp.authoritative",
+  "dnsmasq.dhcp.default_fw_rules",
+  "dnsmasq.dhcp.domain",
+  "dnsmasq.dhcp.enable_ra",
+  "dnsmasq.dhcp.fqdn",
+  "dnsmasq.dhcp.host_ping",
+  "dnsmasq.dhcp.lease_max",
+  "dnsmasq.dhcp.local",
+  "dnsmasq.dhcp.log_dhcp",
+  "dnsmasq.dhcp.log_quiet",
+  "dnsmasq.dhcp.no_interface{opt}",
+  "dnsmasq.dhcp.nosync",
+  "dnsmasq.dhcp.reply_delay",
+  "dnsmasq.dhcp_boot[]",
+  "dnsmasq.dhcp_options[]",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.constructor{opt}",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.description",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.domain",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.domain_type{opt}",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.end_addr",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.interface{opt}",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.lease_time",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.mode{opt}",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.nosync",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.prefix_len",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.ra_interval",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.ra_mode{opt}",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.ra_mtu",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.ra_priority{opt}",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.ra_router_lifetime",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.set_tag{opt}",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.start_addr",
+  "dnsmasq.dhcp_ranges.1c30eccc-fe5a-4ca0-9aa6-1218dd935120.subnet_mask",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.constructor{opt}",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.description",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.domain",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.domain_type{opt}",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.end_addr",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.interface{opt}",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.lease_time",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.mode{opt}",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.nosync",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.prefix_len",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.ra_interval",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.ra_mode{opt}",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.ra_mtu",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.ra_priority{opt}",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.ra_router_lifetime",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.set_tag{opt}",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.start_addr",
+  "dnsmasq.dhcp_ranges.572232ad-30eb-4f66-b725-d6363a8f7a54.subnet_mask",
+  "dnsmasq.dhcp_tags[]",
+  "dnsmasq.dhcpfirst",
+  "dnsmasq.dns_forward_max",
+  "dnsmasq.dns_port",
+  "dnsmasq.dnssec",
+  "dnsmasq.domain_needed",
+  "dnsmasq.domainoverrides[]",
+  "dnsmasq.enable",
+  "dnsmasq.expand_hosts",
+  "dnsmasq.hosts.cb978311-3058-4b74-87c7-05a291b729a8.aliases{opt}",
+  "dnsmasq.hosts.cb978311-3058-4b74-87c7-05a291b729a8.client_id",
+  "dnsmasq.hosts.cb978311-3058-4b74-87c7-05a291b729a8.cnames{opt}",
+  "dnsmasq.hosts.cb978311-3058-4b74-87c7-05a291b729a8.comments",
+  "dnsmasq.hosts.cb978311-3058-4b74-87c7-05a291b729a8.descr",
+  "dnsmasq.hosts.cb978311-3058-4b74-87c7-05a291b729a8.domain",
+  "dnsmasq.hosts.cb978311-3058-4b74-87c7-05a291b729a8.host",
+  "dnsmasq.hosts.cb978311-3058-4b74-87c7-05a291b729a8.hwaddr{opt}",
+  "dnsmasq.hosts.cb978311-3058-4b74-87c7-05a291b729a8.ignore",
+  "dnsmasq.hosts.cb978311-3058-4b74-87c7-05a291b729a8.ip{opt}",
+  "dnsmasq.hosts.cb978311-3058-4b74-87c7-05a291b729a8.lease_time",
+  "dnsmasq.hosts.cb978311-3058-4b74-87c7-05a291b729a8.local",
+  "dnsmasq.hosts.cb978311-3058-4b74-87c7-05a291b729a8.set_tag{opt}",
+  "dnsmasq.interface{opt}",
+  "dnsmasq.local_ttl",
+  "dnsmasq.log_queries",
+  "dnsmasq.no_hosts",
+  "dnsmasq.no_ident",
+  "dnsmasq.no_private_reverse",
+  "dnsmasq.no_resolv",
+  "dnsmasq.port",
+  "dnsmasq.regdhcp",
+  "dnsmasq.regdhcpdomain",
+  "dnsmasq.regdhcpstatic",
+  "dnsmasq.strict_order",
+  "dnsmasq.strictbind",
+  "dnsmasq.strip_subnet"
+ ],
+ "status": 200
+}

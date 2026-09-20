@@ -1,0 +1,94 @@
+{
+ "body": {
+  "dhcpv4": {
+   "general": {
+    "compatibility": {
+     "exclude-first-last-24": {
+      "selected": 0,
+      "value": "exclude-first-last-24"
+     },
+     "ignore-dhcp-server-identifier": {
+      "selected": 0,
+      "value": "ignore-dhcp-server-identifier"
+     },
+     "ignore-rai-link-selection": {
+      "selected": 0,
+      "value": "ignore-rai-link-selection"
+     },
+     "lenient-option-parsing": {
+      "selected": 0,
+      "value": "lenient-option-parsing"
+     }
+    },
+    "decline_probation_period": "",
+    "dhcp_socket_type": {
+     "raw": {
+      "selected": 1,
+      "value": "raw"
+     },
+     "udp": {
+      "selected": 0,
+      "value": "udp"
+     }
+    },
+    "enabled": "0",
+    "fwrules": "1",
+    "interfaces": {
+     "lan": {
+      "selected": 0,
+      "value": "LAN"
+     },
+     "wan": {
+      "selected": 0,
+      "value": "WAN"
+     }
+    },
+    "manual_config": "0",
+    "service_sockets_max_retries": "",
+    "service_sockets_retry_wait_time": "",
+    "valid_lifetime": "4000"
+   },
+   "ha": {
+    "%this_server_name": "OPNsense",
+    "enabled": "0",
+    "max_unacked_clients": "2",
+    "this_server_name": ""
+   },
+   "lexpire": {
+    "flush_reclaimed_timer_wait_time": "",
+    "hold_reclaimed_time": "",
+    "max_reclaim_leases": "",
+    "max_reclaim_time": "",
+    "reclaim_timer_wait_time": "",
+    "unwarned_reclaim_cycles": ""
+   }
+  }
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/kea/dhcpv4/get"
+ },
+ "shape": [
+  "dhcpv4.general.compatibility{opt}",
+  "dhcpv4.general.decline_probation_period",
+  "dhcpv4.general.dhcp_socket_type{opt}",
+  "dhcpv4.general.enabled",
+  "dhcpv4.general.fwrules",
+  "dhcpv4.general.interfaces{opt}",
+  "dhcpv4.general.manual_config",
+  "dhcpv4.general.service_sockets_max_retries",
+  "dhcpv4.general.service_sockets_retry_wait_time",
+  "dhcpv4.general.valid_lifetime",
+  "dhcpv4.ha.%this_server_name",
+  "dhcpv4.ha.enabled",
+  "dhcpv4.ha.max_unacked_clients",
+  "dhcpv4.ha.this_server_name",
+  "dhcpv4.lexpire.flush_reclaimed_timer_wait_time",
+  "dhcpv4.lexpire.hold_reclaimed_time",
+  "dhcpv4.lexpire.max_reclaim_leases",
+  "dhcpv4.lexpire.max_reclaim_time",
+  "dhcpv4.lexpire.reclaim_timer_wait_time",
+  "dhcpv4.lexpire.unwarned_reclaim_cycles"
+ ],
+ "status": 200
+}

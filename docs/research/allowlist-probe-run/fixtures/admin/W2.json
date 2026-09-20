@@ -1,0 +1,65 @@
+{
+ "body": {
+  "current": 1,
+  "rowCount": 1,
+  "rows": [
+   {
+    "%peers": "pilot-peer",
+    "allowed_ips": "",
+    "carp_depend_on": "",
+    "cnfFilename": "/usr/local/etc/wireguard/wg0.conf",
+    "debug": "0",
+    "disableroutes": "0",
+    "dns": "",
+    "enabled": "0",
+    "endpoint": "",
+    "gateway": "",
+    "instance": "0",
+    "interface": "wg0",
+    "mtu": "",
+    "name": "pilot-wg",
+    "peer_dns": "",
+    "peers": "9641437e-2100-4530-bcdb-350b646580de",
+    "port": "51999",
+    "privkey": "<REDACTED>",
+    "pubkey": "fkXrBosWLPL+zOdakbzw0ceDDDHqaKdN90PCb2OxURc=",
+    "statFilename": "/usr/local/etc/wireguard/wg0.stat",
+    "tunneladdress": "10.99.0.1/24",
+    "uuid": "625567b3-e146-4dbc-b574-34ca222b113f"
+   }
+  ],
+  "total": 1
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/wireguard/server/search_server"
+ },
+ "shape": [
+  "current",
+  "rowCount",
+  "rows[].%peers",
+  "rows[].allowed_ips",
+  "rows[].carp_depend_on",
+  "rows[].cnfFilename",
+  "rows[].debug",
+  "rows[].disableroutes",
+  "rows[].dns",
+  "rows[].enabled",
+  "rows[].endpoint",
+  "rows[].gateway",
+  "rows[].instance",
+  "rows[].interface",
+  "rows[].mtu",
+  "rows[].name",
+  "rows[].peer_dns",
+  "rows[].peers",
+  "rows[].port",
+  "rows[].privkey",
+  "rows[].pubkey",
+  "rows[].statFilename",
+  "rows[].tunneladdress",
+  "rows[].uuid",
+  "total"
+ ],
+ "status": 200
+}

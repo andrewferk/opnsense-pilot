@@ -1,0 +1,52 @@
+{
+ "body": {
+  "current": 1,
+  "rowCount": 4,
+  "rows": [
+   {
+    "descr": "IPsec encapsulation",
+    "ifname": "enc0",
+    "members": "",
+    "nogroup": "",
+    "sequence": "10",
+    "uuid": "enc0"
+   },
+   {
+    "descr": "OpenVPN (Group)",
+    "ifname": "openvpn",
+    "members": "",
+    "nogroup": "",
+    "sequence": "10",
+    "uuid": "openvpn"
+   },
+   {
+    "%members": "LAN",
+    "descr": "pilot seed",
+    "ifname": "pilotgrp",
+    "members": "lan",
+    "nogroup": "0",
+    "sequence": "0",
+    "uuid": "c86dad70-dd55-4b19-b418-790bf5f8b812"
+   },
+   "<1 more rows truncated>"
+  ],
+  "total": 4
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/firewall/group/search_item"
+ },
+ "shape": [
+  "current",
+  "rowCount",
+  "rows[].%members",
+  "rows[].descr",
+  "rows[].ifname",
+  "rows[].members",
+  "rows[].nogroup",
+  "rows[].sequence",
+  "rows[].uuid",
+  "total"
+ ],
+ "status": 200
+}

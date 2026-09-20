@@ -1,0 +1,21 @@
+{
+ "body": {
+  "name": "OPNsense.internal",
+  "updates": "Click to check for updates.",
+  "versions": [
+   "OPNsense 26.7.4_1-amd64",
+   "FreeBSD 15.1-RELEASE-p3",
+   "OpenSSL 3.5.8"
+  ]
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/diagnostics/system/system_information"
+ },
+ "shape": [
+  "name",
+  "updates",
+  "versions[]"
+ ],
+ "status": 200
+}

@@ -1,0 +1,39 @@
+{
+ "body": {
+  "current": 1,
+  "rowCount": 1,
+  "rows": [
+   {
+    "%if": "vtnet0 (52:54:00:12:34:56) [LAN]",
+    "%pcp": "Best Effort (0, default)",
+    "descr": "pilot seed vlan",
+    "if": "vtnet0",
+    "pcp": "0",
+    "proto": "",
+    "tag": "10",
+    "uuid": "afcf00df-423e-4385-a20a-648c0b4abc7b",
+    "vlanif": "vlan0.10"
+   }
+  ],
+  "total": 1
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/interfaces/vlan_settings/search_item"
+ },
+ "shape": [
+  "current",
+  "rowCount",
+  "rows[].%if",
+  "rows[].%pcp",
+  "rows[].descr",
+  "rows[].if",
+  "rows[].pcp",
+  "rows[].proto",
+  "rows[].tag",
+  "rows[].uuid",
+  "rows[].vlanif",
+  "total"
+ ],
+ "status": 200
+}

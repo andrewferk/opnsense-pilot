@@ -1,0 +1,387 @@
+{
+ "body": {
+  "unbound": {
+   "acls": {
+    "acl": [],
+    "default_action": {
+     "allow": {
+      "selected": 1,
+      "value": "Allow"
+     },
+     "deny": {
+      "selected": 0,
+      "value": "Deny"
+     },
+     "refuse": {
+      "selected": 0,
+      "value": "Refuse"
+     }
+    }
+   },
+   "advanced": {
+    "aggressivensec": "1",
+    "belownxdomain": "1",
+    "cachemaxnegativettl": "",
+    "cachemaxttl": "",
+    "cacheminttl": "",
+    "discardtimeout": "",
+    "dnssecstripped": "0",
+    "extendedstatistics": "0",
+    "hideidentity": "0",
+    "hideversion": "0",
+    "incomingnumtcp": "",
+    "infracachenumhosts": "",
+    "infrahostttl": "",
+    "infrakeepprobing": "0",
+    "insecuredomain": {
+     "": {
+      "selected": 1,
+      "value": ""
+     }
+    },
+    "jostletimeout": "",
+    "loglocalactions": "0",
+    "logqueries": "0",
+    "logreplies": "0",
+    "logservfail": "0",
+    "logtagqueryreply": "0",
+    "logverbosity": [
+     {
+      "selected": 0,
+      "value": "Level 0"
+     },
+     {
+      "selected": 1,
+      "value": "Level 1 (Default)"
+     },
+     {
+      "selected": 0,
+      "value": "Level 2"
+     },
+     "<3 more rows truncated>"
+    ],
+    "msgcachesize": "",
+    "numqueriesperthread": "",
+    "outgoingnumtcp": "",
+    "outgoingrange": "",
+    "prefetch": "0",
+    "prefetchkey": "0",
+    "privateaddress": {
+     "0.0.0.0/8": {
+      "selected": 1,
+      "value": "0.0.0.0/8"
+     },
+     "10.0.0.0/8": {
+      "selected": 1,
+      "value": "10.0.0.0/8"
+     },
+     "100.64.0.0/10": {
+      "selected": 1,
+      "value": "100.64.0.0/10"
+     },
+     "169.254.0.0/16": {
+      "selected": 1,
+      "value": "169.254.0.0/16"
+     },
+     "172.16.0.0/12": {
+      "selected": 1,
+      "value": "172.16.0.0/12"
+     },
+     "192.0.2.0/24": {
+      "selected": 1,
+      "value": "192.0.2.0/24"
+     },
+     "192.168.0.0/16": {
+      "selected": 1,
+      "value": "192.168.0.0/16"
+     },
+     "198.18.0.0/15": {
+      "selected": 1,
+      "value": "198.18.0.0/15"
+     },
+     "198.51.100.0/24": {
+      "selected": 1,
+      "value": "198.51.100.0/24"
+     },
+     "2001:db8::/32": {
+      "selected": 1,
+      "value": "2001:db8::/32"
+     },
+     "203.0.113.0/24": {
+      "selected": 1,
+      "value": "203.0.113.0/24"
+     },
+     "233.252.0.0/24": {
+      "selected": 1,
+      "value": "233.252.0.0/24"
+     },
+     "::1/128": {
+      "selected": 1,
+      "value": "::1/128"
+     },
+     "fc00::/8": {
+      "selected": 1,
+      "value": "fc00::/8"
+     },
+     "fd00::/8": {
+      "selected": 1,
+      "value": "fd00::/8"
+     },
+     "fe80::/10": {
+      "selected": 1,
+      "value": "fe80::/10"
+     }
+    },
+    "privatedomain": {
+     "": {
+      "selected": 1,
+      "value": ""
+     }
+    },
+    "qnameminstrict": "0",
+    "rrsetcachesize": "",
+    "serveexpired": "0",
+    "serveexpiredclienttimeout": "",
+    "serveexpiredreplyttl": "",
+    "serveexpiredttl": "",
+    "serveexpiredttlreset": "0",
+    "unwantedreplythreshold": "",
+    "valloglevel": [
+     {
+      "selected": 1,
+      "value": "Level 0 (Default)"
+     },
+     {
+      "selected": 0,
+      "value": "Level 1"
+     },
+     {
+      "selected": 0,
+      "value": "Level 2"
+     }
+    ]
+   },
+   "aliases": {
+    "alias": []
+   },
+   "dnsbl": {
+    "blocklist": []
+   },
+   "dots": {
+    "dot": []
+   },
+   "forwarding": {
+    "enabled": "0"
+   },
+   "general": {
+    "active_interface": {
+     "lan": {
+      "selected": 0,
+      "value": "LAN"
+     },
+     "wan": {
+      "selected": 0,
+      "value": "WAN"
+     }
+    },
+    "cacheflush": "0",
+    "dns64": "0",
+    "dns64prefix": "",
+    "dnssec": "0",
+    "enable_wpad": "0",
+    "enabled": "1",
+    "local_zone_type": {
+     "always_nxdomain": {
+      "selected": 0,
+      "value": "always_nxdomain"
+     },
+     "always_refuse": {
+      "selected": 0,
+      "value": "always_refuse"
+     },
+     "always_transparent": {
+      "selected": 0,
+      "value": "always_transparent"
+     },
+     "deny": {
+      "selected": 0,
+      "value": "deny"
+     },
+     "inform": {
+      "selected": 0,
+      "value": "inform"
+     },
+     "inform_deny": {
+      "selected": 0,
+      "value": "inform_deny"
+     },
+     "nodefault": {
+      "selected": 0,
+      "value": "nodefault"
+     },
+     "refuse": {
+      "selected": 0,
+      "value": "refuse"
+     },
+     "static": {
+      "selected": 0,
+      "value": "static"
+     },
+     "transparent": {
+      "selected": 1,
+      "value": "transparent"
+     },
+     "typetransparent": {
+      "selected": 0,
+      "value": "typetransparent"
+     }
+    },
+    "noarecords": "0",
+    "noreglladdr6": "0",
+    "noregrecords": "0",
+    "outgoing_interface": {
+     "lan": {
+      "selected": 0,
+      "value": "LAN"
+     },
+     "wan": {
+      "selected": 0,
+      "value": "WAN"
+     }
+    },
+    "port": "53",
+    "regdhcp": "0",
+    "regdhcpdomain": "",
+    "regdhcpstatic": "0",
+    "safesearch": "0",
+    "stats": "0",
+    "txtsupport": "0"
+   },
+   "hosts": {
+    "host": {
+     "f8c56e10-9455-40f4-9fcc-fd248099dd8f": {
+      "addptr": "1",
+      "aliases": {
+       "": {
+        "selected": 1,
+        "value": ""
+       }
+      },
+      "description": "pilot seed",
+      "domain": "pilot.example",
+      "enabled": "1",
+      "hostname": "seed",
+      "mx": "",
+      "mxprio": "",
+      "rr": {
+       "A": {
+        "selected": 1,
+        "value": "A (IPv4 address)"
+       },
+       "AAAA": {
+        "selected": 0,
+        "value": "AAAA (IPv6 address)"
+       },
+       "MX": {
+        "selected": 0,
+        "value": "MX (mail server)"
+       },
+       "TXT": {
+        "selected": 0,
+        "value": "TXT (text)"
+       }
+      },
+      "server": "192.0.2.53",
+      "ttl": "",
+      "txtdata": ""
+     }
+    }
+   }
+  }
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/unbound/settings/get"
+ },
+ "shape": [
+  "unbound.acls.acl[]",
+  "unbound.acls.default_action{opt}",
+  "unbound.advanced.aggressivensec",
+  "unbound.advanced.belownxdomain",
+  "unbound.advanced.cachemaxnegativettl",
+  "unbound.advanced.cachemaxttl",
+  "unbound.advanced.cacheminttl",
+  "unbound.advanced.discardtimeout",
+  "unbound.advanced.dnssecstripped",
+  "unbound.advanced.extendedstatistics",
+  "unbound.advanced.hideidentity",
+  "unbound.advanced.hideversion",
+  "unbound.advanced.incomingnumtcp",
+  "unbound.advanced.infracachenumhosts",
+  "unbound.advanced.infrahostttl",
+  "unbound.advanced.infrakeepprobing",
+  "unbound.advanced.insecuredomain{opt}",
+  "unbound.advanced.jostletimeout",
+  "unbound.advanced.loglocalactions",
+  "unbound.advanced.logqueries",
+  "unbound.advanced.logreplies",
+  "unbound.advanced.logservfail",
+  "unbound.advanced.logtagqueryreply",
+  "unbound.advanced.logverbosity[].selected",
+  "unbound.advanced.logverbosity[].value",
+  "unbound.advanced.msgcachesize",
+  "unbound.advanced.numqueriesperthread",
+  "unbound.advanced.outgoingnumtcp",
+  "unbound.advanced.outgoingrange",
+  "unbound.advanced.prefetch",
+  "unbound.advanced.prefetchkey",
+  "unbound.advanced.privateaddress{opt}",
+  "unbound.advanced.privatedomain{opt}",
+  "unbound.advanced.qnameminstrict",
+  "unbound.advanced.rrsetcachesize",
+  "unbound.advanced.serveexpired",
+  "unbound.advanced.serveexpiredclienttimeout",
+  "unbound.advanced.serveexpiredreplyttl",
+  "unbound.advanced.serveexpiredttl",
+  "unbound.advanced.serveexpiredttlreset",
+  "unbound.advanced.unwantedreplythreshold",
+  "unbound.advanced.valloglevel[].selected",
+  "unbound.advanced.valloglevel[].value",
+  "unbound.aliases.alias[]",
+  "unbound.dnsbl.blocklist[]",
+  "unbound.dots.dot[]",
+  "unbound.forwarding.enabled",
+  "unbound.general.active_interface{opt}",
+  "unbound.general.cacheflush",
+  "unbound.general.dns64",
+  "unbound.general.dns64prefix",
+  "unbound.general.dnssec",
+  "unbound.general.enable_wpad",
+  "unbound.general.enabled",
+  "unbound.general.local_zone_type{opt}",
+  "unbound.general.noarecords",
+  "unbound.general.noreglladdr6",
+  "unbound.general.noregrecords",
+  "unbound.general.outgoing_interface{opt}",
+  "unbound.general.port",
+  "unbound.general.regdhcp",
+  "unbound.general.regdhcpdomain",
+  "unbound.general.regdhcpstatic",
+  "unbound.general.safesearch",
+  "unbound.general.stats",
+  "unbound.general.txtsupport",
+  "unbound.hosts.host.f8c56e10-9455-40f4-9fcc-fd248099dd8f.addptr",
+  "unbound.hosts.host.f8c56e10-9455-40f4-9fcc-fd248099dd8f.aliases{opt}",
+  "unbound.hosts.host.f8c56e10-9455-40f4-9fcc-fd248099dd8f.description",
+  "unbound.hosts.host.f8c56e10-9455-40f4-9fcc-fd248099dd8f.domain",
+  "unbound.hosts.host.f8c56e10-9455-40f4-9fcc-fd248099dd8f.enabled",
+  "unbound.hosts.host.f8c56e10-9455-40f4-9fcc-fd248099dd8f.hostname",
+  "unbound.hosts.host.f8c56e10-9455-40f4-9fcc-fd248099dd8f.mx",
+  "unbound.hosts.host.f8c56e10-9455-40f4-9fcc-fd248099dd8f.mxprio",
+  "unbound.hosts.host.f8c56e10-9455-40f4-9fcc-fd248099dd8f.rr{opt}",
+  "unbound.hosts.host.f8c56e10-9455-40f4-9fcc-fd248099dd8f.server",
+  "unbound.hosts.host.f8c56e10-9455-40f4-9fcc-fd248099dd8f.ttl",
+  "unbound.hosts.host.f8c56e10-9455-40f4-9fcc-fd248099dd8f.txtdata"
+ ],
+ "status": 200
+}

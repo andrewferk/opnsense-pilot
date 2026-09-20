@@ -1,0 +1,21 @@
+{
+ "body": {
+  "current": 1,
+  "interfaces": [],
+  "rowCount": 0,
+  "rows": [],
+  "total": 0
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/dnsmasq/leases/search"
+ },
+ "shape": [
+  "current",
+  "interfaces[]",
+  "rowCount",
+  "rows[]",
+  "total"
+ ],
+ "status": 200
+}

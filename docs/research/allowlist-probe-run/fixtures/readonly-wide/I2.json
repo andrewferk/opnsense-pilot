@@ -1,0 +1,50 @@
+{
+ "body": {
+  "current": 1,
+  "rowCount": 2,
+  "rows": [
+   {
+    "%descr": "LAN",
+    "%if": "vtnet0 (52:54:00:12:34:56)",
+    "descr": "",
+    "icon": "fa fa-plug text-success",
+    "identifier": "lan",
+    "if": "vtnet0",
+    "lock": "0",
+    "optgroup": "hardware",
+    "uuid": "lan"
+   },
+   {
+    "%descr": "WAN",
+    "%if": "vtnet1 (52:54:00:12:34:57)",
+    "descr": "",
+    "icon": "fa fa-plug text-success",
+    "identifier": "wan",
+    "if": "vtnet1",
+    "lock": "0",
+    "optgroup": "hardware",
+    "uuid": "wan"
+   }
+  ],
+  "total": 2
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/interfaces/assignment/search_item"
+ },
+ "shape": [
+  "current",
+  "rowCount",
+  "rows[].%descr",
+  "rows[].%if",
+  "rows[].descr",
+  "rows[].icon",
+  "rows[].identifier",
+  "rows[].if",
+  "rows[].lock",
+  "rows[].optgroup",
+  "rows[].uuid",
+  "total"
+ ],
+ "status": 200
+}

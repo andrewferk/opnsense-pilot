@@ -1,0 +1,85 @@
+{
+ "body": {
+  "current": 1,
+  "rowCount": 1,
+  "rows": [
+   {
+    "%interface": "WAN",
+    "%type": "BINAT",
+    "alias_meta_destination_net": [
+     {
+      "%value": "any",
+      "description": "",
+      "isAlias": false,
+      "value": "any"
+     }
+    ],
+    "alias_meta_source_net": [
+     {
+      "%value": "192.168.1.60/32",
+      "description": "",
+      "isAlias": false,
+      "value": "192.168.1.60/32"
+     }
+    ],
+    "audit": "eyJjcmVhdGVkIjp7InVzZXJuYW1lIjoicGlsb3QtYWRtaW5AMTkyLjE2OC4xLjIiLCJ0aW1lIjoiMTc4OTkzODQ0Ny4wNCIsImRlc2NyaXB0aW9uIjoiXC9h<truncated, 344 chars>",
+    "categories": "",
+    "category_colors": [],
+    "description": "pilot seed 1:1",
+    "destination_net": "any",
+    "destination_not": "0",
+    "enabled": "1",
+    "external": "198.51.100.60",
+    "interface": "wan",
+    "log": "0",
+    "natreflection": "",
+    "prio_group": "400000",
+    "sequence": "100",
+    "sort_order": "400000.0000100",
+    "source_net": "192.168.1.60/32",
+    "source_not": "0",
+    "type": "binat",
+    "uuid": "1658eeed-0359-4098-b0b0-7cf3e7bdad48"
+   }
+  ],
+  "total": 1
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/firewall/one_to_one/search_rule"
+ },
+ "shape": [
+  "current",
+  "rowCount",
+  "rows[].%interface",
+  "rows[].%type",
+  "rows[].alias_meta_destination_net[].%value",
+  "rows[].alias_meta_destination_net[].description",
+  "rows[].alias_meta_destination_net[].isAlias",
+  "rows[].alias_meta_destination_net[].value",
+  "rows[].alias_meta_source_net[].%value",
+  "rows[].alias_meta_source_net[].description",
+  "rows[].alias_meta_source_net[].isAlias",
+  "rows[].alias_meta_source_net[].value",
+  "rows[].audit",
+  "rows[].categories",
+  "rows[].category_colors[]",
+  "rows[].description",
+  "rows[].destination_net",
+  "rows[].destination_not",
+  "rows[].enabled",
+  "rows[].external",
+  "rows[].interface",
+  "rows[].log",
+  "rows[].natreflection",
+  "rows[].prio_group",
+  "rows[].sequence",
+  "rows[].sort_order",
+  "rows[].source_net",
+  "rows[].source_not",
+  "rows[].type",
+  "rows[].uuid",
+  "total"
+ ],
+ "status": 200
+}

@@ -1,0 +1,29 @@
+{
+ "body": {
+  "metadata": {
+   "subsystems": [],
+   "system": {
+    "message": "No pending messages",
+    "status": 2,
+    "title": "System"
+   },
+   "translations": {
+    "dialogCloseButton": "Close",
+    "dialogTitle": "System Status"
+   }
+  }
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/core/system/status"
+ },
+ "shape": [
+  "metadata.subsystems[]",
+  "metadata.system.message",
+  "metadata.system.status",
+  "metadata.system.title",
+  "metadata.translations.dialogCloseButton",
+  "metadata.translations.dialogTitle"
+ ],
+ "status": 200
+}

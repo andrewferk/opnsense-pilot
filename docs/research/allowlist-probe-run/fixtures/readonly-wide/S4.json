@@ -1,0 +1,15 @@
+{
+ "body": {
+  "message": "Forbidden",
+  "status": 403
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/core/firmware/status"
+ },
+ "shape": [
+  "message",
+  "status"
+ ],
+ "status": 403
+}

@@ -1,0 +1,8 @@
+EPOCH 1789938635
+CONFIG_SHA 379fdd3f15e2a96fe78e0fdab5271c6f754b93570d5b1d026562b96a7d5ed7a6
+CONFIG_MTIME 1789938589
+BACKUPS 34 NEWEST config-1789938589.5457.xml
+CONFIGD_LINES 808
+AUDIT_LINES 739
+SYSTEM_LINES 286
+PROCS php-cgi:24 getty:8 sh:5 rtsold:5 python3.13:4 dhclient:3 syslog-ng:2 sort:2 vnlru:1 vmdaemon:1 unbound:1 syncer:1 rand_harvestq:1 ps:1 pf:1 pagedaemon:1 ntpd:1 login:1 lighttpd:1 kernel:1 intr:1 init:1 idle:1 hostwatch:1 geom:1 filterlog:1 dnsmasq:1 dhcp6c:1 devd:1 daemon:1 csh:1 crypto:1 cron:1 clock:1 cam:1 busdma:1 bufdaemon:1 audit:1 COMMAND:1

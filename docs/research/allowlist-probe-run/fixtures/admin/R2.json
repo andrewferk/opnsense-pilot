@@ -1,0 +1,58 @@
+{
+ "body": [
+  {
+   "destination": "10.0.2.0/24",
+   "expire": "",
+   "flags": "U",
+   "gateway": "link#2",
+   "id": "10.0.2.0/24,link#2",
+   "intf_description": "WAN",
+   "mtu": "1500",
+   "netif": "vtnet1",
+   "nhop#": "4",
+   "proto": "ipv4"
+  },
+  {
+   "destination": "10.0.2.15",
+   "expire": "",
+   "flags": "UHS",
+   "gateway": "link#3",
+   "id": "10.0.2.15,link#3",
+   "intf_description": "Loopback",
+   "mtu": "16384",
+   "netif": "lo0",
+   "nhop#": "5",
+   "proto": "ipv4"
+  },
+  {
+   "destination": "127.0.0.1",
+   "expire": "",
+   "flags": "UH",
+   "gateway": "link#3",
+   "id": "127.0.0.1,link#3",
+   "intf_description": "Loopback",
+   "mtu": "16384",
+   "netif": "lo0",
+   "nhop#": "2",
+   "proto": "ipv4"
+  },
+  "<12 more rows truncated>"
+ ],
+ "request": {
+  "method": "GET",
+  "path": "/api/diagnostics/interface/get_routes"
+ },
+ "shape": [
+  "[].destination",
+  "[].expire",
+  "[].flags",
+  "[].gateway",
+  "[].id",
+  "[].intf_description",
+  "[].mtu",
+  "[].netif",
+  "[].nhop#",
+  "[].proto"
+ ],
+ "status": 200
+}

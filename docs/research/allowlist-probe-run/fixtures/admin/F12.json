@@ -1,0 +1,29 @@
+{
+ "body": {
+  "current": 1,
+  "rowCount": 1,
+  "rows": [
+   {
+    "auto": "0",
+    "color": "00aa00",
+    "name": "pilot-seed",
+    "uuid": "f97fbfa9-8bb1-4e86-b777-c549a025cfcb"
+   }
+  ],
+  "total": 1
+ },
+ "request": {
+  "method": "GET",
+  "path": "/api/firewall/category/search_item"
+ },
+ "shape": [
+  "current",
+  "rowCount",
+  "rows[].auto",
+  "rows[].color",
+  "rows[].name",
+  "rows[].uuid",
+  "total"
+ ],
+ "status": 200
+}
