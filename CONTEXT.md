@@ -39,3 +39,19 @@ _Avoid_: Status (ambiguous with feature status)
 **Abstain**:
 A detector returning unknown because the release is outside what it was verified against or required evidence was not collected, naming what is missing. Missing evidence never counts as absence.
 _Avoid_: Skip, pass, not applicable
+
+**Embedding provider**:
+The configured source of vectors for knowledge retrieval: none (the default), a local provider, or a remote provider.
+_Avoid_: Embedding model (that is what a provider serves), vector backend
+
+**Local provider**:
+An embedding provider that runs on the service host or its Compose network and has no outbound route. A LAN host is not local; it is a remote provider the administrator trusts.
+_Avoid_: On-prem, self-hosted (both include LAN hosts)
+
+**Egress allowlist**:
+The single list of hosts the service may reach for any outbound purpose, ingestion and embeddings alike. Anything not on it is unreachable.
+_Avoid_: Firewall rules (collides with the OPNsense domain), proxy config
+
+**Private observation**:
+Any data captured from a registered firewall (snapshots, inventory, config exports, logs). Never indexed for search, never embedded, never mixed into the corpus, never leaves the service.
+_Avoid_: Telemetry, customer data, firewall export (one kind of private observation)
