@@ -67,3 +67,19 @@ _Avoid_: Entity (ambiguous with persistence), business object
 **Persistence model**:
 A SQLAlchemy mapped class describing how a domain type is stored. Lives only inside infrastructure; repositories accept and return domain types, never persistence models.
 _Avoid_: Table model, ORM model, database entity
+
+**Connector**:
+The typed httpx adapter that talks to one firewall's native API and can only issue operations that appear in the operation registry.
+_Avoid_: Client (implies a general-purpose API client), adapter (any port implementation)
+
+**Operation**:
+One reviewed native OPNsense call: a pinned verb and path, a fixed payload shape, the release range it is verified for, the privileges it needs, its side-effect class, the fields to redact, and the source and lab evidence behind it.
+_Avoid_: Endpoint (a path can host several operations), call, request
+
+**Candidate operation**:
+An operation proposed by source extraction or imported from a third-party map that has not yet been reviewed; never issued by the connector.
+_Avoid_: Draft entry, unverified endpoint
+
+**Operation registry**:
+The reviewed set of operations the connector may issue, which is the control that makes v1 read-only. An operation outside it cannot be called.
+_Avoid_: Endpoint registry, allowlist (the registry is the allowlist), catalog (that is generated corpus material)
