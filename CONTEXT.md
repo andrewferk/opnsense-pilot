@@ -55,3 +55,15 @@ _Avoid_: Firewall rules (collides with the OPNsense domain), proxy config
 **Private observation**:
 Any data captured from a registered firewall (snapshots, inventory, config exports, logs). Never indexed for search, never embedded, never mixed into the corpus, never leaves the service.
 _Avoid_: Telemetry, customer data, firewall export (one kind of private observation)
+
+**Public contract**:
+A Pydantic model at the MCP, REST, or CLI boundary: the shape a caller sees and the project promises to keep.
+_Avoid_: API model, schema (ambiguous with the database schema), DTO
+
+**Domain type**:
+A typed Python value that services, detectors, and policy predicates operate on; owes nothing to how it is stored or served.
+_Avoid_: Entity (ambiguous with persistence), business object
+
+**Persistence model**:
+A SQLAlchemy mapped class describing how a domain type is stored. Lives only inside infrastructure; repositories accept and return domain types, never persistence models.
+_Avoid_: Table model, ORM model, database entity
