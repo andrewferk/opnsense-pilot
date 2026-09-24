@@ -83,3 +83,11 @@ _Avoid_: Draft entry, unverified endpoint
 **Operation registry**:
 The reviewed set of operations the connector may issue, which is the control that makes v1 read-only. An operation outside it cannot be called.
 _Avoid_: Endpoint registry, allowlist (the registry is the allowlist), catalog (that is generated corpus material)
+
+**Client token**:
+A named static bearer credential that identifies one MCP or REST client to OPNsense Pilot; revocable on its own. Never the OPNsense credential, which is a separate server-side secret.
+_Avoid_: API key (collides with the OPNsense API key), access token (implies OAuth issuance)
+
+**Principal**:
+The identity a request resolves to and that every authorization decision is scoped to. In v1 a principal is a client token; later it may be an OAuth subject.
+_Avoid_: User (v1 has no user accounts), actor (ambiguous with the reference agent), tenant
