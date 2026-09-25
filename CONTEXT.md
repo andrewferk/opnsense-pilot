@@ -107,3 +107,23 @@ _Avoid_: API key (collides with the OPNsense API key), access token (implies OAu
 **Principal**:
 The identity a request resolves to and that every authorization decision is scoped to. In v1 a principal is a client token; later it may be an OAuth subject.
 _Avoid_: User (v1 has no user accounts), actor (ambiguous with the reference agent), tenant
+
+**Lab controller**:
+The Inspect-free library that owns the lab's virtual machines, their network segments, snapshots, and cleanup; pytest, a CLI, and the Inspect provider all drive the same controller.
+_Avoid_: Sandbox (that is the Inspect-side adapter), hypervisor driver
+
+**Target environment**:
+An Inspect environment a sample can name and read, such as the firewall, that is never the default environment and offers no shell.
+_Avoid_: Sandbox (implies executable), guest
+
+**Firewall slot**:
+One running OPNsense virtual machine the lab controller lends to a sample and reclaims afterwards; the slot count bounds concurrency.
+_Avoid_: Instance, worker, VM pool entry
+
+**Scenario baseline**:
+The warm snapshot of a firewall slot taken after scenario configuration is injected; every sample of that scenario starts from it.
+_Avoid_: Golden image (the installed image before any scenario), fixture, checkpoint (an Inspect resume artifact)
+
+**Mutation path**:
+Any channel by which something inside a sample (agent, tools, scorers) could change firewall state. The lab's invariant is that a sample holds none.
+_Avoid_: Write access, escape hatch, side channel
