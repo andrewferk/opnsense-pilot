@@ -40,6 +40,22 @@ _Avoid_: Status (ambiguous with feature status)
 A detector returning unknown because the release is outside what it was verified against or required evidence was not collected, naming what is missing. Missing evidence never counts as absence.
 _Avoid_: Skip, pass, not applicable
 
+**Coverage**:
+What a snapshot says about each inventory category: collected, partial, or not collected, and when not collected, why (no API, privilege denied, export not enabled, plugin absent, outside v1 inventory, unsupported release). An uncollected category is never shown as an empty one.
+_Avoid_: Completeness, availability, "empty"
+
+**Evidence source**:
+Where a category or a detector's evidence came from: the API, a live config export, or an imported config export, each with its own time. One snapshot may mix sources; the labels say which.
+_Avoid_: Data source, origin, channel
+
+**Config export**:
+The firewall's whole `config.xml`, fetched live through the backup API or supplied by the administrator as a file. It contains every secret on the firewall and is a private observation. The raw export is parsed and redacted in memory and never stored.
+_Avoid_: Backup (also an OPNsense revert target), dump, config file (ambiguous with Pilot's own configuration)
+
+**Redacted export**:
+The stored form of a config export: every secret value replaced by a marker that says a value was present, checked by a final scan before anything is kept.
+_Avoid_: Sanitized export (the lab's fixture term), cleaned config
+
 **Embedding provider**:
 The configured source of vectors for knowledge retrieval: none (the default), a local provider, or a remote provider.
 _Avoid_: Embedding model (that is what a provider serves), vector backend
