@@ -127,3 +127,11 @@ _Avoid_: Golden image (the installed image before any scenario), fixture, checkp
 **Mutation path**:
 Any channel by which something inside a sample (agent, tools, scorers) could change firewall state. The lab's invariant is that a sample holds none.
 _Avoid_: Write access, escape hatch, side channel
+
+**Support tier**:
+Where a registered firewall's release stands against the compatibility target: verified (the read-only suite passed on that build in the lab), assumed (inside the declared range, not yet run), or unsupported (everything else; only the version is read and every category is not collected).
+_Avoid_: Compatibility level, supported (ambiguous between verified and assumed), version confidence (that is how well the release is known, not whether it is supported)
+
+**Capability observation**:
+What one firewall actually answered for one registered operation: available, privilege denied, absent, or unsupported release. Coverage on a snapshot is derived from observations, so a permission error is never read as a feature being absent.
+_Avoid_: Capability (bare; the handoff used it for three different things), probe result, endpoint check
